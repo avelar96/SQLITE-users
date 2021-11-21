@@ -28,10 +28,6 @@ def create_user():
             user_data.get("hobbies")
         )
     }
-
-    if not first_name in user_data.get:
-        return abort(400, "First name is required")
-
     return out, 201
 
 
