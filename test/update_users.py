@@ -7,7 +7,7 @@ TEST_USER_DATA = {
     "hobbies": "playing tennis"
 }
 
-URL = "http:/127.0.0.1:5000/users/2"
+URL = "http://127.0.0.1:5000/users/2"
 
 def update_user():
     out = requests.put(URL, json=TEST_USER_DATA)
