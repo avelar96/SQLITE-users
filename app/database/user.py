@@ -64,7 +64,7 @@ def update( pk, first_name, last_name, hobbies):
     cursor.close()
 
 
-def deactive_user(pk):
+def deactivate_user(pk):
     cursor = get_db()
     cursor.execute(
         "UPDATE user SET active=0 WHERE id=?", (pk,))
